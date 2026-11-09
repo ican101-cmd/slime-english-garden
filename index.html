@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="在史萊姆花園練習小二上英語期中考，一起養大史萊姆！">
+<title>史萊姆英語花園</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="bank.js"></script>
+<script defer src="handwriting-model.js"></script>
+<script defer src="handwriting.js"></script>
+<script defer src="game.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span aria-hidden="true">✿</span> 史萊姆英語花園</a>
+  <span class="top-tag">小二上 · 期中複習</span>
+</header>
+<main>
+  <section class="intro">
+    <div class="kicker">SLIME ENGLISH GARDEN</div>
+    <h1>今天來養<span>史萊姆！</span></h1>
+    <p>答一題英語，看牠長大一點。</p>
+  </section>
+  <div class="layout">
+    <aside class="garden" aria-label="史萊姆花園">
+      <div class="garden-head"><span>✿ 我的花園</span><span id="energy">0 點能量</span></div>
+      <div class="scene">
+        <div class="scene-label" id="level">等待第一隻史萊姆</div>
+        <div id="slimes" class="slimes" aria-label="目前沒有史萊姆"></div>
+        <div id="change" class="change" aria-hidden="true"></div>
+      </div>
+      <div class="garden-foot">
+        <div class="evolution"><span>● 小</span><b>→</b><span>● 中</span><b>→</b><span>● 大</span><b>→</b><span>● 巨型</span><b>→</b><span>● 王</span></div>
+        <p id="goal">答對第一題，就能得到小史萊姆！</p>
+      </div>
+    </aside>
+    <section class="panel" aria-label="英語挑戰">
+      <div id="challenge"></div>
+    </section>
+  </div>
+  <div class="rules"><span><b>＋1</b> 答對獲得一隻小史萊姆</span><span><b>2 合 1</b> 兩隻同級自動進化</span><span><b>－1</b> 答錯扣一隻小史萊姆的份量</span></div>
+</main>
+<footer>Get Ready · Unit 1 · Unit 2 · Review 1</footer>
+</body>
+</html>
